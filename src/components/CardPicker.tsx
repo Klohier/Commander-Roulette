@@ -94,7 +94,7 @@ return(
         <h1>Commander Roulette</h1>
 <figure>
         <img id="card-image" className="display__image" src={data.Img} alt=""></img>
-        <figcaption className="display__caption">{data.Name} {data.Price}</figcaption>
+        <figcaption className="display__caption">{data.Name} {data.Price === null ? "Price: Unknown" : 'Price: $' + data.Price }</figcaption>
     </figure>
     <div className="display__controls">
     
