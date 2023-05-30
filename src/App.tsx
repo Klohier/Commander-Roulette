@@ -1,6 +1,5 @@
 // import Message from './Message';
 import Chosen from './pages/Chosen';
-import DisplayCard from './components/CardPicker';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
