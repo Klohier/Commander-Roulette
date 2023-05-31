@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { useSprings, animated, to as interpolate } from '@react-spring/web'
-import { useDrag } from '@use-gesture/react'
+// import { useSprings, animated, to as interpolate } from '@react-spring/web'
+// import { useDrag } from '@use-gesture/react'
 export default function DisplayCard(){
 
 
@@ -27,7 +27,7 @@ const oldData = JSON.parse(localStorage.getItem("Cards") || "[]")
 const[cards, setCards] = useState<any[]>(oldData);
 
 
-const[deck, setDeck] = useState<any[]>([]);
+// const[deck, setDeck] = useState<any[]>([]);
 
 
 
@@ -44,7 +44,7 @@ useEffect(() =>{
         // console.log(data);
         setLoading(false)
         setData({Name:data["name"], Img:data["image_uris"].png, Price:data["prices"].usd} );
-        setDeck(prevDeck => [...prevDeck, data["image_uris"].png])
+        // setDeck(prevDeck => [...prevDeck, data["image_uris"].png])
     })
     .catch((e) => {
         console.error(`An error occurred: ${e}`)
